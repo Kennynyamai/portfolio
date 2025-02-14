@@ -1161,8 +1161,8 @@ input:checked + .toggle-bg {
   margin-bottom: 2rem;
 }
 
-.ml-12 {
-  margin-left: 3rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .ml-2 {
@@ -1187,10 +1187,6 @@ input:checked + .toggle-bg {
 
 .ml-auto {
   margin-left: auto;
-}
-
-.mr-12 {
-  margin-right: 3rem;
 }
 
 .mr-20 {
@@ -1663,8 +1659,8 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pr-60 {
@@ -1810,6 +1806,10 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1869,6 +1869,10 @@ input:checked + .toggle-bg {
   transition-duration: 150ms;
 }
 
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -1895,6 +1899,11 @@ input:checked + .toggle-bg {
 .email-link:hover::before {
   transform: scaleX(0);
   transform-origin: right;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .hidden-state {
@@ -2092,6 +2101,14 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mb-0 {
     margin-bottom: 0px;
@@ -2099,6 +2116,22 @@ input:checked + .toggle-bg {
 
   .md\:ml-0 {
     margin-left: 0px;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .md\:mt-28 {
+    margin-top: 7rem;
   }
 
   .md\:block {
@@ -2111,6 +2144,15 @@ input:checked + .toggle-bg {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:border {
+    border-width: 1px;
+  }
+
+  .md\:border-red-500 {
+    --tw-border-opacity: 1;
+    border-color: rgb(240 82 82 / var(--tw-border-opacity));
   }
 
   .md\:px-12 {

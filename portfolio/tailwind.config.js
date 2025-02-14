@@ -1,17 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./src/**/*.{html,js,jsx,ts,tsx}",
     "./public/**/*.{html,js}",
+    "./*.{html,js}",
     "./node_modules/flowbite/**/*.js",
-  ],
+  ],  
   theme: {
     extend: {
       screens: {
-        'sm': '640px',   // Small devices (landscape phones)
-        'md': '768px',   // Medium devices (tablets)
-        'lg': '1024px',  // Large devices (desktops)
-        'xl': '1280px',  // Extra large devices (large desktops)
-        '2xl': '1536px', // 2xl devices
+        '2xl': '1536px', // Only add or override what's necessary
       },
         animation: {
         'slide-up': 'slideUp 1s ease-in-out forwards',

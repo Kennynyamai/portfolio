@@ -44,7 +44,7 @@
     </main>
 
     <section>
-        <div class="flex justify-between items-center p-6 mt-28 font-medium" id="trigger-section">
+        <div class="flex justify-between items-center p-6 sm:space-x-12 mt-16  md:mt-28 font-medium" id="trigger-section">
             <div class="text-lg ml-6 appear hidden-state">(Selected work)</div>
             <div class="text-lg mr-6 appear hidden-state">Discover ↓</div>
         </div>
@@ -52,16 +52,16 @@
 
 
         <!-- Image that will appear after text -->
-        <div class="ml-12 mr-12 appear-image">
+        <div class="ml-6 mr-6 md:ml-12 md:mr-12 appear-image">
             <div class="border-2 border-gray-400 rounded-xl overflow-hidden hover-image">
                 <img src="roam.png" alt="Description of the image" class="w-full h-auto max-w-full">
             </div>
         </div>
         
 
-
-
     </section> 
+
+    
     <section class="flex justify-between items-center p-6 font-normal w-full">
         <div class="text-lg ml-6">Roam®</div>
         <div class="text-lg text-right ml-auto mr-6"> <!-- Align the company website text to the right -->
@@ -72,7 +72,7 @@
 
 
 
-    <section class="flex flex-col p-6 mt-28 font-normal gap-8">
+    <section class="flex flex-col p-6 mt-12 md:mt-28 font-normal gap-8">
         <div class="flex justify-between items-start w-full">
             <div class="text-xl md:ml-6 ml-1 w-1/4 font-medium">(001)</div>
             <div class="text-4xl text-left w-[80%] pr-60 font-medium">
@@ -86,7 +86,7 @@
         </div>
     
         <!-- This paragraph appears below on small screens only -->
-        <p class="text-2xl  font-medium text-left w-full ml-1 pr-4 -mt-4 md:hidden">
+        <p class="text-xl  font-medium text-left w-full ml-1 pr-4 -mt-4 md:hidden">
             As a digital designer and art director, I help companies and organisations around the world connect with
             their audience and grow their business. Projects can be done directly with clients or in a supporting
             role for agencies and studios from around the world.
@@ -103,108 +103,202 @@
 
 
         <!-- Awards and Recognitions Section -->
-        <section class="p-6 text-left w-[80%] ml-auto mt-28">
-            <h2 class="text-lg font-medium mb-4">More Projects</h2>
-            <div class="border-t border-gray-300 pt-4">
-                <div class="dropdown">
-                    <div
-                        class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
-                        Awwwards Independent of the year nominee
-                        <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </div>
-                    <!-- Dropdown Menu -->
-                    <div
-                        class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[80%] mx-auto mt-2">
-                        <div class="flex items-start border-b border-gray-300 py-4">
-                            <div class="mr-20">
-                                <p class="text-gray-600 font-medium text-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
-                                    exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
-                                    laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
-                                </p>
+          <!-- Section to appear on medium and large screens only -->
+         <section class="hidden md:block">
+            <section class="p-6 text-left w-[80%] ml-auto mt-28">
+                <h2 class="text-lg font-medium mb-4">More Projects</h2>
+                <div class="border-t border-gray-300 pt-4">
+                    <div class="dropdown">
+                        <div
+                            class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
+                            Awwwards Independent of the year nominee
+                            <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[80%] mx-auto mt-2">
+                            <div class="flex items-start border-b border-gray-300 py-4">
+                                <div class="mr-20">
+                                    <p class="text-gray-600 font-medium text-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
+                                        exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
+                                        laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Repeat the structure for additional dropdowns -->
-
-            <div class="border-t border-gray-300 pt-4">
-                <div class="dropdown">
-                    <div
-                        class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
-                        Awwwards Independent of the year nominee
-                        <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </div>
-                    <!-- Dropdown Menu -->
-                    <div
-                        class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[80%] mx-auto mt-2">
-                        <div class="flex items-start border-b border-gray-300 py-4">
-                            <div class="mr-20">
-                                <p class="text-gray-600 font-medium text-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
-                                    exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
-                                    laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
-                                </p>
+                <!-- Repeat the structure for additional dropdowns -->
+    
+                <div class="border-t border-gray-300 pt-4">
+                    <div class="dropdown">
+                        <div
+                            class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
+                            Awwwards Independent of the year nominee
+                            <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[80%] mx-auto mt-2">
+                            <div class="flex items-start border-b border-gray-300 py-4">
+                                <div class="mr-20">
+                                    <p class="text-gray-600 font-medium text-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
+                                        exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
+                                        laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Repeat the structure for additional dropdowns -->
-
-            <div class="border-t border-gray-300 pt-4">
-                <div class="dropdown">
-                    <div
-                        class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
-                        Awwwards Independent of the year nominee
-                        <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </div>
-                    <!-- Dropdown Menu -->
-                    <div
-                        class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[80%] mx-auto mt-2">
-                        <div class="flex items-start border-b border-gray-300 py-4">
-                            <div class="mr-20">
-                                <p class="text-gray-600 font-medium text-lg">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
-                                    exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
-                                    laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto. Lorem,
-                                    ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, mollitia animi sunt
-                                    eveniet libero assumenda saepe natus alias fuga praesentium reprehenderit repellat
-                                    asperiores eligendi delectus expedita minus magni officia. Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit. Commodi eos ab nemo assumenda, repellat illo
-                                    error illum. Iste possimus accusantium magni obcaecati, placeat ullam vel
-                                    reiciendis, explicabo a temporibus adipisci!
-                                </p>
+                <!-- Repeat the structure for additional dropdowns -->
+    
+                <div class="border-t border-gray-300 pt-4">
+                    <div class="dropdown">
+                        <div
+                            class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
+                            Awwwards Independent of the year nominee
+                            <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[80%] mx-auto mt-2">
+                            <div class="flex items-start border-b border-gray-300 py-4">
+                                <div class="mr-20">
+                                    <p class="text-gray-600 font-medium text-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
+                                        exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
+                                        laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto. Lorem,
+                                        ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, mollitia animi sunt
+                                        eveniet libero assumenda saepe natus alias fuga praesentium reprehenderit repellat
+                                        asperiores eligendi delectus expedita minus magni officia. Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Commodi eos ab nemo assumenda, repellat illo
+                                        error illum. Iste possimus accusantium magni obcaecati, placeat ullam vel
+                                        reiciendis, explicabo a temporibus adipisci!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Repeat the structure for additional dropdowns -->
-        </section>
+                <!-- Repeat the structure for additional dropdowns -->
+            </section>
+    
 
+         </section>
 
+          <!-- Section to appear on small screens only -->
+          <section class="block md:hidden">
+            <section class="p-2 ml-auto mt-12">
+                <h2 class="text-lg font-medium mb-4">More Projects</h2>
+                <div class="border-t border-gray-300 pt-4">
+                    <div class="dropdown">
+                        <div
+                            class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
+                            Awwwards Independent of the year nominee
+                            <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow mx-auto mt-2">
+                            <div class="flex items-start border-b border-gray-300 py-4">
+                                <div class="mr-2">
+                                    <p class="text-gray-600 font-medium text-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
+                                        exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
+                                        laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the structure for additional dropdowns -->
+    
+                <div class="border-t border-gray-300 pt-4">
+                    <div class="dropdown">
+                        <div
+                            class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
+                            Awwwards Independent of the year nominee
+                            <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow mx-auto mt-2">
+                            <div class="flex items-start border-b border-gray-300 py-4">
+                                <div class="mr-2">
+                                    <p class="text-gray-600 font-medium text-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
+                                        exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
+                                        laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the structure for additional dropdowns -->
+    
+                <div class="border-t border-gray-300 pt-4">
+                    <div class="dropdown">
+                        <div
+                            class="dropdown-button text-2xl font-semibold cursor-pointer flex justify-between items-center">
+                            Awwwards Independent of the year nominee
+                            <svg class="w-6 h-6 text-2xl font-semibold cursor-pointer ml-2 dropdown-icon"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="dropdown-menu z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow mx-auto mt-2">
+                            <div class="flex items-start border-b border-gray-300 py-4">
+                                <div class="mr-2">
+                                    <p class="text-gray-600 font-medium text-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur rem
+                                        exercitationem ex eligendi? Cumque nostrum fugiat labore nulla quisquam rerum error
+                                        laboriosam. Excepturi praesentium aperiam fuga iure officiis architecto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the structure for additional dropdowns -->
+            </section>
+    
 
-
+         </section>
+       
     </section>
 
 
 
-
-
+ <!-- Section to appear only on medium and large screens -->
+<section class="hidden md:block">
     <div class="container mx-auto px-4 py-8">
         <!-- Header -->
         <div class="flex justify-between items-center text-8xl font-bold border-b border-gray-300 py-16 mb-8">
@@ -212,7 +306,7 @@
             <div class="ml-8">
                 <a href="mailto:kennynyamai73@gmail.com"
                     class="mt-4 text-xl inline-block px-8 py-3 border border-black rounded-full text-black font-normal hover:bg-black hover:text-white transition-colors">
-                    My Resume
+                    Download Resume
                 </a>
             </div>
         </div>
@@ -263,18 +357,106 @@
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Email link aligned directly below the second div -->
-    <div class="ml-[25%] mt-8">
+
+ <!-- Section to appear only on small screens -->
+ <section class="block md:hidden">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="flex flex-col  text-4xl font-bold border-b border-gray-300 py-12 mb-8">
+            <h1>EXPERIENCE</h1>
+        </div>
+
+        <!-- Information Architecture Sections -->
+        <div class="flex items-center justify-between  ">
+            <div class="text-lg font-medium">
+                <span class="text-gray-500">01.</span>
+            </div>
+            <div class="ml-auto">
+                <h2 class="text-4xl font-semibold mb-0">
+                    <a href="#" target="_blank" class="hover:underline">
+                        Roam Electric.
+                    </a>
+                </h2>
+            </div>
+        </div>
+        
+            
+            <div class="border-b border-gray-300 py-16">
+                <p class="text-gray-600 font-medium text-xl">
+                    Problem ideation transforms challenges into solutions through research and structured framing.
+                    It starts by identifying a relevant, solvable, and ethical problem, crafting a focused problem
+                    statement, and using research to refine it. The "How Might We" framework breaks down the problem
+                    into actionable steps, ensuring solutions are practical, scalable, and impactful. Collaboration
+                    ensures alignment and solutions backed by research insights.
+                </p>
+            </div>
+
+
+
+             <!-- Information Architecture Sections -->
+        <div class="flex items-center justify-between  ">
+            <div class="text-lg font-medium">
+                <span class="text-gray-500">02.</span>
+            </div>
+            <div class="ml-auto">
+                <h2 class="text-4xl font-semibold mb-0">
+                    <a href="#" target="_blank" class="hover:underline">
+                        Gearbox Kenya.
+                    </a>
+                </h2>
+            </div>
+        </div>
+        
+            
+            <div class="border-b border-gray-300 py-16">
+                <p class="text-gray-600 font-medium text-xl">
+                    Problem ideation transforms challenges into solutions through research and structured framing.
+                    It starts by identifying a relevant, solvable, and ethical problem, crafting a focused problem
+                    statement, and using research to refine it. The "How Might We" framework breaks down the problem
+                    into actionable steps, ensuring solutions are practical, scalable, and impactful. Collaboration
+                    ensures alignment and solutions backed by research insights.
+                </p>
+            </div>
+        </div>
+
+        </div>
+   
+</section>
+ 
+
+    <!-- appears only on medium and large screens, Email link aligned directly below the second div -->
+     <section class="hidden md:block">
+
+        <div class="ml-[25%] mt-8">
+            <a href="mailto:kennynyamai73@gmail.com"
+                class="mt-4 text-xl inline-block px-8 py-3 border border-black rounded-full text-black font-normal hover:bg-black hover:text-white transition-colors">
+                kennynyamai73@gmail.com
+            </a>
+        </div>
+
+     </section>
+
+ <!-- appears only on small screens, -->
+ <section class="block md:hidden">
+    <div class="mt-4 flex flex-col items-center space-y-8">
         <a href="mailto:kennynyamai73@gmail.com"
-            class="mt-4 text-xl inline-block px-8 py-3 border border-black rounded-full text-black font-normal hover:bg-black hover:text-white transition-colors">
+            class="text-xl inline-block px-8 py-3 border border-black rounded-full text-black font-normal hover:bg-black hover:text-white transition-colors">
+            Download Resume
+        </a>
+        <a href="mailto:kennynyamai73@gmail.com"
+            class="text-xl inline-block px-8 py-3 border border-black rounded-full text-black font-normal hover:bg-black hover:text-white transition-colors mt-4">
             kennynyamai73@gmail.com
         </a>
     </div>
+</section>
+
+   
     </section>
 
 
-    <section class="flex flex-col items-start justify-center px-4 md:px-12 mt-28">
+    <section class="flex flex-col items-start justify-center px-4 md:px-12 mt-12 md:mt-28">
         <h1 class="text-5xl md:text-8xl font-extrabold leading-tight mt-4">
             KEN MWENDWA
             <span class="block text-5xl md:text-8xl font-extrabold -mt-4">SOFTWARE ENGINEER</span>

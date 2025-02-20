@@ -57,6 +57,27 @@ module.exports = {
           transform: 'scaleX(0)',
           transformOrigin: 'right',
         },
+        '.external-link': {
+          position: 'relative',
+          textDecoration: 'none',
+          display: 'inline-block',
+        },
+        '.external-link::before': {
+          content: '""',
+          position: 'absolute',
+          width: '100%',
+          height: '2px',
+          backgroundColor: '#000',
+          bottom: '-2px',
+          left: '0',
+          transform: 'scaleX(1)',
+          transformOrigin: 'left',
+          transition: 'transform 0.6s ease-in-out',
+        },
+        '.external-link:hover::before': {
+          transform: 'scaleX(0)',
+          transformOrigin: 'right',
+        },
         '.fade-in': {
           opacity: '1',
           transition: 'opacity 0.5s ease',
